@@ -46,11 +46,15 @@ cv2.waitKey(0)
 
 # construct the list of interpolation methods in OpenCV
 methods = [
+	# larger to smaller images
 	("cv2.INTER_NEAREST", cv2.INTER_NEAREST),
 	("cv2.INTER_LINEAR", cv2.INTER_LINEAR),
 	("cv2.INTER_AREA", cv2.INTER_AREA),
+
+	#smaller to larger images
 	("cv2.INTER_CUBIC", cv2.INTER_CUBIC),
-	("cv2.INTER_LANCZOS4", cv2.INTER_LANCZOS4)]
+	("cv2.INTER_LANCZOS4", cv2.INTER_LANCZOS4),
+	("cv2.INTER_LINEAR", cv2.INTER_LINEAR)]
 
 # loop over the interpolation methods
 for (name, method) in methods:
