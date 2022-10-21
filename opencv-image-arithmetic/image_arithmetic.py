@@ -33,6 +33,7 @@ print("wrap around: {}".format(subtracted))
 # load the original input image and display it to our screen
 image = cv2.imread(args["image"])
 cv2.imshow("Original", image)
+print(image.shape)
 
 # increasing the pixel intensities in our input image by 100 is
 # accomplished by constructing a NumPy array that has the *same
