@@ -49,3 +49,5 @@ M = np.ones(image.shape, dtype="uint8") * 50
 subtracted = cv2.subtract(image, M)
 cv2.imshow("Darker", subtracted)
 cv2.waitKey(0)
+
+
